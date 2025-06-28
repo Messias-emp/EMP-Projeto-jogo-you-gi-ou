@@ -6,3 +6,20 @@
   font-family: "Press Start 2P", cursive;
   user-select: none;
 }
+
+/*.container{
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    
+}
+@media  screen and (min-width: 350px) {
+  container{
+        max-width: 992px;
+        height: auto;
+        align-items: center;
+        border-radius: 1rem;
+    }
+}*/

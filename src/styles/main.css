@@ -1,0 +1,552 @@
+/* Cursor personalizado 
+body {
+  cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
+button, a, img:hover, a:hover {
+  cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+}
+
+/* Vídeo de fundo 
+.bg-video {
+  position: absolute;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-video .video {
+  height: 100vh;
+}
+
+.bg-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;*/ /* padrão desktop 
+  height: 100vh;
+  width: 100%;
+}
+*/
+/* Para celular 
+@media screen and (max-width: 768px) 
+  .container {
+    flex-direction: column; {*//* empilha os blocos 
+    height: auto;
+  }
+*/
+
+
+/* Para celular 
+.container__left {
+  width: 35%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}*/
+
+/* Responsivo 
+@media screen and (max-width: 768px) {
+  .container__left {
+    width: 100%;
+    min-width: unset;
+    padding: 1rem;
+  }
+  .container__rigth {
+    width: 100%;
+  }
+}
+
+
+.score_box {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .card-box {
+    justify-content: center;
+  }
+
+  .card {
+    height: 60px;
+    max-width: 50px;
+  }
+
+  .card-infield {
+    width: 100px;
+    height: auto;
+  }
+
+  .menu_avatar img {
+    max-height: 150px;
+  }
+
+  .score_box {
+    font-size: 0.9rem;
+  }
+}
+.card-box {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card {
+  height: 80px;
+  max-width: 70px;
+}
+
+.menu_avatar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu_avatar img {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.card_details {
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+
+.container__rigth {
+  width: 65%;
+}
+*/
+/* Detalhes da carta 
+.card_details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+}
+
+#card-name {
+  font-size: 0.8rem;
+}
+
+#card-type {
+  font-size: 1rem;
+}
+*/
+/* Área das cartas 
+.card-box__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+
+.card-box {
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  box-sizing: border-box;
+}*/
+
+/* Cartas 
+.card {
+  height: 100px;
+  width: auto;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+*/
+/* Campo de batalha 
+.card-versus__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 0.1rem;
+  height: 300px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.versus-top, .versus-botton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+/* Botão fixo, sem empurrar layout 
+.versus-botton {
+  margin-top: 1rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#next-duel {
+  display: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+}*/
+
+/* Mobile 
+@media screen and (max-width: 768px) {
+  #next-duel {
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+  }
+}
+
+
+.card-infield {
+  height: 11.2rem;
+  width: 8rem;
+}*/
+
+/* Efeito no item do meio 
+.millenium-float {
+  animation: float 2s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
+  }*/
+  /* Cursor personalizado */
+body {
+  cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
+button, a, img:hover, a:hover {
+  cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+}
+
+/* Vídeo de fundo */
+.bg-video {
+  position: absolute;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-video .video {
+  height: 100vh;
+}
+
+.bg-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+/* Layout principal */
+.container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.container__left {
+  width: 35%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  height: 100%;           /* garante altura completa do container */
+  overflow: hidden;       /* impede expansão por erro */
+}
+
+@media screen and (max-width: 768px) {
+  .container__left {
+    width: 100%;
+    padding: 1rem;
+  }
+ 
+  .menu_avatar img {
+    max-height: 150px;
+  }
+
+  .score_box {
+    font-size: 0.9rem;
+  }
+}
+
+.score_box {
+  flex-direction: column;
+  height: 100px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.score_box, .framed{
+   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+}
+
+
+
+.menu_avatar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menu_avatar img {
+
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  height: 96%;
+  width: 80%;
+}
+
+
+.card_details {
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+
+
+.container__rigth {
+  width: 65%;
+}
+
+.frame {
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
+/* Detalhes da carta */
+.card_details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+}
+
+#card-name {
+  font-size: 0.8rem;
+}
+
+#card-type {
+  font-size: 1rem;
+}
+
+/* Área das cartas */
+.card-box__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  box-sizing: border-box;
+}
+
+.card-box {
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* Cartas */
+.card {
+  height: 100px;
+  width: auto;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+/* Campo de batalha */
+.card-versus__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 0.1rem;
+  height: 300px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.versus-top, .versus-botton {
+ 
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+}
+
+
+/* Botão fixo, sem empurrar layout */
+.versus-botton {
+  margin-top: 1rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#next-duel {
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  z-index: 2;
+}
+
+.card-infield {
+  height: 11.2rem;
+  width: 8rem;
+}
+
+/* Efeito no item do meio */
+.millenium-float {
+  animation: float 2s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Responsividade para celular */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container__left,
+  .container__rigth {
+    width: 100%;
+  }
+
+  .card-box {
+    justify-content: center;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .card {
+    height: 80px;
+  }
+
+  #next-duel {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  .card-infield {
+    width: 100px;
+    height: auto;
+  }
+
+  .card-versus__container {
+    height: auto;
+    gap: 1rem;
+  }
+}

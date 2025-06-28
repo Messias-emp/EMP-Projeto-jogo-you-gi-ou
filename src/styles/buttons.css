@@ -3,7 +3,7 @@
 */
 
 /* button style */
-.rpgui-button {
+.rpgui-button, .rpgui-button2{
   /* hide button default stuff */
   background-color: Transparent;
   background-repeat: no-repeat;
