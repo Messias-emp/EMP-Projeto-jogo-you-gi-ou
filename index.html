@@ -4,6 +4,9 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+    maximum-scale=1.0, user-scalable=no">
+
     <!--____________faivicon___________________-->
     <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
     <!--CSS RESET-->
@@ -24,9 +27,9 @@
 <body>
 
 
-<audio id="bgm" loop>
-  <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3">
-</audio>
+    <audio id="bgm" loop>
+        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3">
+    </audio>
 
 
 
@@ -38,7 +41,7 @@
     <div class="container">
         <div class="container__left framed-golden-2">
             <div class="score_box frame">
-                <span id="score_points" class="framed-golden-2" >
+                <span id="score_points" class="framed-golden-2">
 
                     Pontuação
                 </span>
@@ -59,23 +62,25 @@
                         <div class="card-infield">
                             <img id="player-field-card" height="180px" width="100px" />
                         </div>
-                        <img class=".millenium-float" height="100px" src="./src/assets/icons/millenium2.png" alt=""Millenium"" />
-                       
+
+                        <img class="millenium-float aura-energia" height="100px" src="./src/assets/icons/millenium2.png"
+                            alt="Millenium" />
+
                         <div class="card-infield">
                             <img id="computer-field-card" height="180px" width="100px" />
                         </div>
                     </div>
-                   
+
 
                     <div class="versus-botton">
-                         <button id="next-duel" class="rpgui-button"  onclick="resetDuel()">
-                            </button>
-                             <!-- Botão para iniciar o jogo e o áudio -->
+                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">
+                        </button>
+                        <!-- Botão para iniciar o jogo e o áudio -->
                         <button class="rpgui-button2" id="start-button">Iniciar Jogo</button>
                     </div>
-                   
+
                 </div>
-                 
+
                 <div class="card-box framed" id="player-cards"></div>
             </div>
         </div>

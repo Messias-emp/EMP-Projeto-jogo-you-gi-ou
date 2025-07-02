@@ -1,277 +1,11 @@
-/* Cursor personalizado 
 body {
   cursor: url("../assets/cursor/yugicursor.png"), default;
 }
 
-button, a, img:hover, a:hover {
-  cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
-}
-
-/* Vídeo de fundo 
-.bg-video {
-  position: absolute;
-  z-index: -2;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.bg-video .video {
-  height: 100vh;
-}
-
-.bg-video::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh; 
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
-}
-
-.container {
-  position: relative;
-  z-index: 3;
-  display: flex;
-  flex-direction: row;*/ /* padrão desktop 
-  height: 100vh;
-  width: 100%;
-}
-*/
-/* Para celular 
-@media screen and (max-width: 768px) 
-  .container {
-    flex-direction: column; {*//* empilha os blocos 
-    height: auto;
-  }
-*/
-
-
-/* Para celular 
-.container__left {
-  width: 35%;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}*/
-
-/* Responsivo 
-@media screen and (max-width: 768px) {
-  .container__left {
-    width: 100%;
-    min-width: unset;
-    padding: 1rem;
-  }
-  .container__rigth {
-    width: 100%;
-  }
-}
-
-
-.score_box {
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 768px) {
-  .card-box {
-    justify-content: center;
-  }
-
-  .card {
-    height: 60px;
-    max-width: 50px;
-  }
-
-  .card-infield {
-    width: 100px;
-    height: auto;
-  }
-
-  .menu_avatar img {
-    max-height: 150px;
-  }
-
-  .score_box {
-    font-size: 0.9rem;
-  }
-}
-.card-box {
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.card {
-  height: 80px;
-  max-width: 70px;
-}
-
-.menu_avatar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.menu_avatar img {
-  max-width: 100%;
-  max-height: 180px;
-  object-fit: contain;
-  border: 2px solid #000;
-  border-radius: 8px;
-}
-
-.card_details {
-  width: 100%;
-  background-color: #fff;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: auto;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-
-
-.container__rigth {
-  width: 65%;
-}
-*/
-/* Detalhes da carta 
-.card_details {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 6rem;
-  width: 100%;
-}
-
-#card-name {
-  font-size: 0.8rem;
-}
-
-#card-type {
-  font-size: 1rem;
-}
-*/
-/* Área das cartas 
-.card-box__container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0.3rem;
-  box-sizing: border-box;
-}
-
-.card-box {
-  height: 9rem;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  box-sizing: border-box;
-}*/
-
-/* Cartas 
-.card {
-  height: 100px;
-  width: auto;
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: scale(1.2);
-}
-*/
-/* Campo de batalha 
-.card-versus__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  padding-top: 0.1rem;
-  height: 300px;
-  gap: 2rem;
-  align-items: center;
-}
-
-.versus-top, .versus-botton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-
-/* Botão fixo, sem empurrar layout 
-.versus-botton {
-  margin-top: 1rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-#next-duel {
-  display: none;
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  text-align: center;
-}*/
-
-/* Mobile 
-@media screen and (max-width: 768px) {
-  #next-duel {
-    width: 80%;
-    margin: 1rem auto;
-    font-size: 1.2rem;
-  }
-}
-
-
-.card-infield {
-  height: 11.2rem;
-  width: 8rem;
-}*/
-
-/* Efeito no item do meio 
-.millenium-float {
-  animation: float 2s infinite alternate ease-in-out;
-}
-
-@keyframes float {
-  0%   { transform: translateY(0px); }
-  100% { transform: translateY(-10px); }
-}
-
-  }*/
-  /* Cursor personalizado */
-body {
-  cursor: url("../assets/cursor/yugicursor.png"), default;
-}
-
-button, a, img:hover, a:hover {
+button,
+a,
+img:hover,
+a:hover {
   cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
 }
 
@@ -296,13 +30,11 @@ button, a, img:hover, a:hover {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh; 
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  height: 100vh;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 1) 100%);
 }
 
 /* Layout principal */
@@ -310,8 +42,11 @@ button, a, img:hover, a:hover {
   position: relative;
   z-index: 3;
   display: flex;
-  height: 100vh;
-  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100svh;
+  width: 100vw;
 }
 
 .container__left {
@@ -321,11 +56,10 @@ button, a, img:hover, a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
   padding: 1rem;
   box-sizing: border-box;
-  height: 100%;           /* garante altura completa do container */
-  overflow: hidden;       /* impede expansão por erro */
+  height: 100%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -333,7 +67,15 @@ button, a, img:hover, a:hover {
     width: 100%;
     padding: 1rem;
   }
- 
+
+  .container__rigth {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
   .menu_avatar img {
     max-height: 150px;
   }
@@ -353,12 +95,15 @@ button, a, img:hover, a:hover {
   box-sizing: border-box;
   flex-shrink: 0;
 }
-.score_box, .framed{
-   
+
+.score_box,
+.framed {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 15px;
+  text-align: center;
 }
 
 
@@ -369,7 +114,9 @@ button, a, img:hover, a:hover {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  height: 153px;
 }
+
 
 .menu_avatar img {
 
@@ -383,7 +130,6 @@ button, a, img:hover, a:hover {
 
 .card_details {
   width: 100%;
-  background-color: #fff;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -401,7 +147,7 @@ button, a, img:hover, a:hover {
 }
 
 .frame {
-  border: 3px solid #000;
+  border: none;
   border-radius: 5px;
 }
 
@@ -430,7 +176,7 @@ button, a, img:hover, a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   box-sizing: border-box;
 }
 
@@ -464,17 +210,20 @@ button, a, img:hover, a:hover {
   justify-content: center;
   align-content: center;
   padding-top: 0.1rem;
-  height: 300px;
+  height: 102px;
   gap: 2rem;
   align-items: center;
 }
 
-.versus-top, .versus-botton {
- 
+
+.versus-top,
+.versus-botton {
+
   display: grid;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin-top: 50px;
+  z-index: 1;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0px;
 }
@@ -484,6 +233,7 @@ button, a, img:hover, a:hover {
 .versus-botton {
   margin-top: 1rem;
   height: 3rem;
+  width: 35rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -503,50 +253,158 @@ button, a, img:hover, a:hover {
   width: 8rem;
 }
 
-/* Efeito no item do meio */
-.millenium-float {
-  animation: float 2s infinite alternate ease-in-out;
+/* Efeito de energia ao redor do item do milênio */
+.aura-energia {
+  position: relative;
+  z-index: 1;
+  animation: brilhoGlow 4s infinite ease-in-out;
+
 }
 
-@keyframes float {
-  0%   { transform: translateY(0px); }
-  100% { transform: translateY(-10px); }
+/* Aura visível, pulsante e com brilho */
+.aura-energia::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 0, 0.4) 0%, transparent 70%);
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 50%;
+  animation: energiaPulse 2s infinite ease-in-out;
+  z-index: -1;
+  filter: blur(10px);
+  pointer-events: none;
 }
 
-/* Responsividade para celular */
+/* Animação de expansão e contração */
+@keyframes energiaPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0, 7;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* Brilho constante externo */
+@keyframes brilhoGlow {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 10px yellow) drop-shadow(0 0 20px gold);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 20px yellow) drop-shadow(0 0 35px orange);
+  }
+}
+
+/* ======== CELULAR DEITADO ======== */
+@media screen and (max-height: 500px) and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .container__left,
+  .container__rigth {
+    width: 65%;
+    padding: 0.5rem;
+  }
+  .card-box__container{
+    height: 96vh;
+  }
+  .menu_avatar img {
+    max-height: 120px;
+  }
+
+  .card {
+    height: 70px;
+  }
+  .aura-energia{
+    margin-bottom: -6rem;
+  }
+  .card-infield {
+    width: 90px;
+    height: 100px;
+    left: 1rem;
+
+  }
+  .card-infield img{
+    margin-bottom: -6rem;
+  }
+  .score_box {
+    font-size: 0.8rem;
+  }
+
+  .versus-botton {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    margin-top: 167px;
+  }
+  .versus-top{
+    margin-top: 125px;
+  }
+}
+/* ======== LAYOUT CELULAR EM PÉ ======== */
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
-    height: auto;
+    height: 100vh;
   }
 
   .container__left,
   .container__rigth {
     width: 100%;
+    padding: 0.5rem;
+  }
+
+  .menu_avatar img {
+    max-height: 150px;
+  }
+
+  .score_box {
+    font-size: 0.9rem;
   }
 
   .card-box {
-    justify-content: center;
-    height: auto;
-    padding: 1rem 0;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  #next-duel {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .card-infield {
+    width: 80px;
+    height: 100px;
   }
 
   .card {
     height: 80px;
   }
 
-  #next-duel {
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
+  .card-details {
+    font-size: 0.8rem;
   }
 
-  .card-infield {
-    width: 100px;
-    height: auto;
-  }
-
-  .card-versus__container {
-    height: auto;
-    gap: 1rem;
+  .versus-botton {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 8rem;
   }
 }
