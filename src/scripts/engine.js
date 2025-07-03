@@ -100,6 +100,7 @@ async function setCardsField(cardId) {
   const duelResults = await checkDuelResults(cardId, computerCardId);
   await updateScore();
   await drawButton(duelResults);
+  await showGameResult(duelResults); // Nova função para mostrar o resultado
 
   const milleniumImg = document.querySelector(".millenium-float");
   milleniumImg.classList.add("pulse");
@@ -152,6 +153,22 @@ async function checkDuelResults(playerCardId, computerCardId) {
 
   return duelResults;
 }
+async function showGameResult(result) {
+  // Esconde as cartas
+  document.getElementById("computer-cards").style.display = "none";
+  document.getElementById("player-cards").style.display = "none";
+  // Cria mensagem e adiciona no DOM
+  const resultMessage = document.createElement("div");
+  resultMessage.textContent = result.toUpperCase();
+
+  resultMessage.classList.add("result-message");
+
+  // Garante que não cria várias mensagens repetidas
+  const existing = document.querySelector(".result-message");
+  if (existing) existing.remove();
+
+  document.querySelector(".card-box__container").appendChild(resultMessage);
+}
 
 async function removeAllCardsImages() {
   let { computerBox, player1Box } = state.playerSides;
@@ -161,15 +178,28 @@ async function removeAllCardsImages() {
 }
 
 async function resetDuel() {
+  // Limpa os detalhes da carta selecionada
   state.cardSprites.avatar.src = "";
   state.cardSprites.name.innerText = "";
   state.cardSprites.type.innerText = "";
-
+  // Oculta botão de próximo duelo
   state.actions.button.style.display = "none";
-
+  // Oculta as cartas de campo
   state.fieldCards.player.style.display = "none";
   state.fieldCards.computer.style.display = "none";
 
+  // Remove mensagem de resultado (se existir)
+  const resultMessage = document.querySelector(".result-message");
+  if (resultMessage) resultMessage.remove();
+
+  // Mostra os campos de cartas novamente
+  document.getElementById("computer-cards").style.display = "flex";
+  document.getElementById("player-cards").style.display = "flex";
+
+  // Remove cartas anteriores (limpa o campo)
+  await removeAllCardsImages();
+
+  // Reinicia o jogo (desenha novas cartas)
   init();
 }
 
@@ -188,6 +218,12 @@ function init() {
 }
 document.getElementById("start-button").addEventListener("click", () => {
   const bgm = document.getElementById("bgm");
+  // Mostra as cartas do jogador e do computador
+  document.getElementById("computer-cards").style.display = "flex";
+  document.getElementById("player-cards").style.display = "flex";
+
+  // Se quiser esconder o botão após iniciar:
+  document.getElementById("start-button").style.display = "none";
 
   if (bgm) {
     try {
