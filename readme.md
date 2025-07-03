@@ -14,7 +14,7 @@ Jogo de cartas inspirado em Yu-Gi-Oh desenvolvido com HTML, CSS e JavaScript.
 
 ## Preview (captura de tela ou link Netlify)
 
-[Acesse o jogo online](https://https://emp-yougiho.netlify.app)
+[Acesse o jogo online](https://emp-yougiho.netlify.app)
 
 ## Tecnologias utilizadas
 
