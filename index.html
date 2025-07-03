@@ -58,27 +58,31 @@
             <div class="card-box__container">
                 <div class="card-box framed" id="computer-cards"></div>
                 <div class="card-versus__container">
+
                     <div class="versus-top">
+                        <!-- Campo do jogador -->
                         <div class="card-infield">
-                            <img id="player-field-card" height="180px" width="100px" />
+                            <img id="player-field-card" src="" alt="" />
                         </div>
 
-                        <img class="millenium-float aura-energia" height="100px" src="./src/assets/icons/millenium2.png"
-                            alt="Millenium" />
 
+                        <div class="millenium-wrapper">
+                            <img class="millenium-float aura-energia" src="./src/assets/icons/millenium2.png"
+                                alt="Millenium" />
+                        </div>
+
+                        <!-- Campo do computador -->
                         <div class="card-infield">
-                            <img id="computer-field-card" height="180px" width="100px" />
+                            <img id="computer-field-card" src="" alt="" />
                         </div>
                     </div>
 
-
-                    <div class="versus-botton">
-                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">
-                        </button>
-                        <!-- Botão para iniciar o jogo e o áudio -->
-                        <button class="rpgui-button2" id="start-button">Iniciar Jogo</button>
-                    </div>
-
+                </div>
+                <div class="versus-botton">
+                    <button id="next-duel" class="rpgui-button" onclick="resetDuel()">
+                    </button>
+                    <!-- Botão para iniciar o jogo e o áudio -->
+                    <button class="rpgui-button2" id="start-button">Iniciar Jogo</button>
                 </div>
 
                 <div class="card-box framed" id="player-cards"></div>
